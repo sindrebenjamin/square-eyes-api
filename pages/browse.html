@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Browse - Square Eyes</title>
+    <meta
+      name="description"
+      content="Browse thousands of movies and buy them directly from the creators"
+    />
+    <link rel="stylesheet" href="../styles/header.css" />
+    <link rel="stylesheet" href="../styles/styles.css" />
+    <link rel="stylesheet" href="../styles/variables.css" />
+    <link rel="stylesheet" href="../styles/browse.css" />
+
+    <script
+      src="https://kit.fontawesome.com/00254567e3.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <section class="top-header">
+        <section class="header-icons-left">
+          <a
+            href="javascript:void(0);"
+            class="burger-icon"
+            onclick="myFunction()"
+          >
+            <i class="fas fa-bars"></i>
+          </a>
+          <a href="../index.html"
+            ><img
+              class="logo"
+              src="../images/SquareEyes_Logo_upgraded_compressed.png"
+              alt="Square Eyes Logo"
+            />
+          </a>
+        </section>
+
+        <section class="searchbar">
+          <input
+            class="search-placeholder"
+            type="text"
+            placeholder="Search..."
+          />
+          <svg
+            class="magnifier-icon"
+            width="17"
+            height="17"
+            viewBox="0 0 17 17"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g clip-path="url(#clip0_645_271)">
+              <path
+                d="M11.8615 10.844C12.8298 9.5227 13.2635 7.8845 13.0759 6.25716C12.8882 4.62982 12.093 3.13335 10.8493 2.06714C9.60567 1.00093 8.0053 0.443613 6.36839 0.506686C4.73147 0.569759 3.17873 1.24857 2.02082 2.40732C0.862902 3.56606 0.185201 5.11929 0.123299 6.75624C0.0613971 8.3932 0.619859 9.99317 1.68696 11.2361C2.75406 12.4789 4.25109 13.2731 5.87857 13.4596C7.50604 13.6461 9.14393 13.2112 10.4646 12.242H10.4635C10.4935 12.282 10.5255 12.32 10.5616 12.357L14.4115 16.207C14.5991 16.3946 14.8534 16.5001 15.1187 16.5002C15.384 16.5003 15.6384 16.395 15.826 16.2075C16.0137 16.02 16.1192 15.7656 16.1193 15.5004C16.1193 15.2351 16.0141 14.9806 15.8265 14.793L11.9766 10.943C11.9408 10.9068 11.9024 10.8734 11.8615 10.843V10.844ZM12.1195 7.00001C12.1195 7.72228 11.9773 8.43748 11.7009 9.10477C11.4245 9.77206 11.0194 10.3784 10.5086 10.8891C9.99792 11.3998 9.3916 11.8049 8.72431 12.0813C8.05702 12.3577 7.34182 12.5 6.61955 12.5C5.89728 12.5 5.18208 12.3577 4.51479 12.0813C3.8475 11.8049 3.24118 11.3998 2.73046 10.8891C2.21974 10.3784 1.81461 9.77206 1.53821 9.10477C1.26181 8.43748 1.11955 7.72228 1.11955 7.00001C1.11955 5.54132 1.69901 4.14237 2.73046 3.11092C3.76191 2.07947 5.16086 1.50001 6.61955 1.50001C8.07824 1.50001 9.47719 2.07947 10.5086 3.11092C11.5401 4.14237 12.1195 5.54132 12.1195 7.00001Z"
+                fill="black"
+                fill-opacity="0.25"
+              />
+            </g>
+            <defs>
+              <clipPath id="clip0_645_271">
+                <rect
+                  width="16"
+                  height="16"
+                  fill="white"
+                  transform="translate(0.119507 0.5)"
+                />
+              </clipPath>
+            </defs>
+          </svg>
+        </section>
+
+        <nav id="nav-links">
+          <a href="../pages/browse.html"
+            ><span class="nav-link">Browse</span></a
+          >
+          <a href="../pages/contact.html"
+            ><span class="nav-link link-move">Contact</span></a
+          >
+          <a href="../pages/about.html"
+            ><span class="nav-link link-move">About Us</span></a
+          >
+        </nav>
+        <section class="header-icons-right">
+          <a href="#"
+            ><svg
+              class="user-icon"
+              width="28"
+              height="28"
+              viewBox="0 0 28 28"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M7.16984 6.83027C7.16984 10.3879 10.2259 13.2831 13.9812 13.2831C17.7365 13.2831 20.7925 10.3879 20.7925 6.83027C20.7925 3.27261 17.7365 0.377441 13.9812 0.377441C10.2259 0.377441 7.16984 3.27261 7.16984 6.83027ZM26.0902 27.6227H27.6038V26.1888C27.6038 20.6551 22.8495 16.151 17.0084 16.151H10.9539C5.11131 16.151 0.358521 20.6551 0.358521 26.1888V27.6227H26.0902Z"
+              />
+            </svg>
+          </a>
+          <a href="../pages/cart.html"
+            ><svg
+              class="cart-icon"
+              width="30"
+              height="28"
+              viewBox="0 0 30 28"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M29.5675 6.43264C29.3052 5.9795 28.9296 5.60188 28.4773 5.33661C28.025 5.07135 27.5115 4.92748 26.9869 4.91906H7.55627L6.67582 1.49838C6.58686 1.16817 6.3884 0.877725 6.11275 0.674342C5.83711 0.47096 5.50052 0.366624 5.1578 0.378329H2.12177C1.71917 0.378329 1.33306 0.537795 1.04838 0.821645C0.763693 1.1055 0.60376 1.49048 0.60376 1.89191C0.60376 2.29333 0.763693 2.67832 1.04838 2.96217C1.33306 3.24602 1.71917 3.40548 2.12177 3.40548H4.00411L8.19383 18.9348C8.28279 19.265 8.48125 19.5554 8.7569 19.7588C9.03255 19.9622 9.36914 20.0665 9.71185 20.0548H23.374C23.6543 20.054 23.9289 19.9758 24.1674 19.8288C24.4059 19.6819 24.5989 19.472 24.725 19.2224L29.7041 9.2933C29.9199 8.84228 30.0204 8.345 29.9965 7.84584C29.9727 7.34668 29.8253 6.86117 29.5675 6.43264Z"
+              />
+              <path
+                d="M8.95284 27.6227C10.2104 27.6227 11.2299 26.6062 11.2299 25.3524C11.2299 24.0985 10.2104 23.082 8.95284 23.082C7.69528 23.082 6.67582 24.0985 6.67582 25.3524C6.67582 26.6062 7.69528 27.6227 8.95284 27.6227Z"
+              />
+              <path
+                d="M24.133 27.6227C25.3906 27.6227 26.41 26.6062 26.41 25.3524C26.41 24.0985 25.3906 23.082 24.133 23.082C22.8754 23.082 21.856 24.0985 21.856 25.3524C21.856 26.6062 22.8754 27.6227 24.133 27.6227Z"
+              />
+            </svg>
+          </a>
+        </section>
+      </section>
+
+      <section class="searchbar-mobile">
+        <input class="search-placeholder" type="text" placeholder="Search..." />
+        <svg
+          class="magnifier-icon"
+          width="17"
+          height="17"
+          viewBox="0 0 17 17"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g clip-path="url(#clip0_645_271)">
+            <path
+              d="M11.8615 10.844C12.8298 9.5227 13.2635 7.8845 13.0759 6.25716C12.8882 4.62982 12.093 3.13335 10.8493 2.06714C9.60567 1.00093 8.0053 0.443613 6.36839 0.506686C4.73147 0.569759 3.17873 1.24857 2.02082 2.40732C0.862902 3.56606 0.185201 5.11929 0.123299 6.75624C0.0613971 8.3932 0.619859 9.99317 1.68696 11.2361C2.75406 12.4789 4.25109 13.2731 5.87857 13.4596C7.50604 13.6461 9.14393 13.2112 10.4646 12.242H10.4635C10.4935 12.282 10.5255 12.32 10.5616 12.357L14.4115 16.207C14.5991 16.3946 14.8534 16.5001 15.1187 16.5002C15.384 16.5003 15.6384 16.395 15.826 16.2075C16.0137 16.02 16.1192 15.7656 16.1193 15.5004C16.1193 15.2351 16.0141 14.9806 15.8265 14.793L11.9766 10.943C11.9408 10.9068 11.9024 10.8734 11.8615 10.843V10.844ZM12.1195 7.00001C12.1195 7.72228 11.9773 8.43748 11.7009 9.10477C11.4245 9.77206 11.0194 10.3784 10.5086 10.8891C9.99792 11.3998 9.3916 11.8049 8.72431 12.0813C8.05702 12.3577 7.34182 12.5 6.61955 12.5C5.89728 12.5 5.18208 12.3577 4.51479 12.0813C3.8475 11.8049 3.24118 11.3998 2.73046 10.8891C2.21974 10.3784 1.81461 9.77206 1.53821 9.10477C1.26181 8.43748 1.11955 7.72228 1.11955 7.00001C1.11955 5.54132 1.69901 4.14237 2.73046 3.11092C3.76191 2.07947 5.16086 1.50001 6.61955 1.50001C8.07824 1.50001 9.47719 2.07947 10.5086 3.11092C11.5401 4.14237 12.1195 5.54132 12.1195 7.00001Z"
+              fill="black"
+              fill-opacity="0.25"
+            />
+          </g>
+          <defs>
+            <clipPath id="clip0_645_271">
+              <rect
+                width="16"
+                height="16"
+                fill="white"
+                transform="translate(0.119507 0.5)"
+              />
+            </clipPath>
+          </defs>
+        </svg>
+      </section>
+    </header>
+    <main>
+      <h1>Showing 29603 Movies</h1>
+
+      <section class="filter-wrapper-mobile">
+        <section class="filter-container">
+          <div class="filter-selected f-action">Action</div>
+          <div class="filter-unselected">Romance</div>
+          <div class="filter-unselected">Adventure</div>
+          <div class="filter-unselected">Comedy</div>
+          <div class="filter-unselected">Horror</div>
+          <div class="filter-unselected">Drama</div>
+        </section>
+        <section class="order-selection">
+          Best Match
+          <svg
+            class="black-arrow"
+            width="8"
+            height="6"
+            viewBox="0 0 8 6"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M1.14286 0.5L4 3.625L6.85714 0.5L8 1.125L4 5.5L0 1.125L1.14286 0.5Z"
+            />
+          </svg>
+        </section>
+      </section>
+
+      <section class="filter-master">
+        <section class="filter-container-desktop">
+          <div class="genre-selector">
+            Genre
+            <svg
+              width="8"
+              height="6"
+              viewBox="0 0 8 6"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M1.14286 0.5L4 3.625L6.85714 0.5L8 1.125L4 5.5L0 1.125L1.14286 0.5Z"
+                fill="white"
+              />
+            </svg>
+          </div>
+          <div class="collection-selector">
+            Collection
+            <svg
+              class="black-arrow"
+              width="8"
+              height="6"
+              viewBox="0 0 8 6"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M1.14286 0.5L4 3.625L6.85714 0.5L8 1.125L4 5.5L0 1.125L1.14286 0.5Z"
+              />
+            </svg>
+          </div>
+          <div class="studio-selector">
+            Studio
+            <svg
+              class="black-arrow"
+              width="8"
+              height="6"
+              viewBox="0 0 8 6"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M1.14286 0.5L4 3.625L6.85714 0.5L8 1.125L4 5.5L0 1.125L1.14286 0.5Z"
+              />
+            </svg>
+          </div>
+          <a href="#" class="filter-link">More Filters</a>
+          <div class="filter-selected-desktop">
+            Action
+            <svg
+              class="black-arrow"
+              width="10"
+              height="10"
+              viewBox="0 0 10 10"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M1.34125 1.78378C1.31219 1.75472 1.28915 1.72023 1.27342 1.68227C1.2577 1.64431 1.2496 1.60362 1.2496 1.56253C1.2496 1.52144 1.2577 1.48075 1.27342 1.44279C1.28915 1.40483 1.31219 1.37033 1.34125 1.34128C1.3703 1.31222 1.4048 1.28918 1.44276 1.27345C1.48072 1.25773 1.52141 1.24963 1.5625 1.24963C1.60359 1.24963 1.64428 1.25773 1.68224 1.27345C1.7202 1.28918 1.75469 1.31222 1.78375 1.34128L5 4.55815L8.21625 1.34128C8.2453 1.31222 8.2798 1.28918 8.31776 1.27345C8.35572 1.25773 8.39641 1.24963 8.4375 1.24963C8.47859 1.24963 8.51928 1.25773 8.55724 1.27345C8.5952 1.28918 8.62969 1.31222 8.65875 1.34128C8.6878 1.37033 8.71085 1.40483 8.72657 1.44279C8.7423 1.48075 8.75039 1.52144 8.75039 1.56253C8.75039 1.60362 8.7423 1.64431 8.72657 1.68227C8.71085 1.72023 8.6878 1.75472 8.65875 1.78378L5.44187 5.00003L8.65875 8.21628C8.6878 8.24533 8.71085 8.27983 8.72657 8.31779C8.7423 8.35575 8.75039 8.39644 8.75039 8.43753C8.75039 8.47862 8.7423 8.51931 8.72657 8.55727C8.71085 8.59523 8.6878 8.62972 8.65875 8.65878C8.62969 8.68783 8.5952 8.71088 8.55724 8.72661C8.51928 8.74233 8.47859 8.75042 8.4375 8.75042C8.39641 8.75042 8.35572 8.74233 8.31776 8.72661C8.2798 8.71088 8.2453 8.68783 8.21625 8.65878L5 5.4419L1.78375 8.65878C1.75469 8.68783 1.7202 8.71088 1.68224 8.72661C1.64428 8.74233 1.60359 8.75042 1.5625 8.75042C1.52141 8.75042 1.48072 8.74233 1.44276 8.72661C1.4048 8.71088 1.3703 8.68783 1.34125 8.65878C1.31219 8.62972 1.28915 8.59523 1.27342 8.55727C1.2577 8.51931 1.2496 8.47862 1.2496 8.43753C1.2496 8.39644 1.2577 8.35575 1.27342 8.31779C1.28915 8.27983 1.31219 8.24533 1.34125 8.21628L4.55812 5.00003L1.34125 1.78378Z"
+                fill="white"
+              />
+            </svg>
+          </div>
+          <a href="#" class="filter-link">Clear All</a>
+        </section>
+
+        <section class="order-selection">
+          Best Match
+          <svg
+            class="black-arrow"
+            width="8"
+            height="6"
+            viewBox="0 0 8 6"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M1.14286 0.5L4 3.625L6.85714 0.5L8 1.125L4 5.5L0 1.125L1.14286 0.5Z"
+            />
+          </svg>
+        </section>
+      </section>
+
+      <section class="movie-container"></section>
+
+      <section class="page-numbers">
+        <a href="#"
+          ><svg
+            class="previous-page"
+            width="14"
+            height="16"
+            viewBox="0 0 14 16"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M3.93402e-07 8L13.5 0.205773L13.5 15.7942L3.93402e-07 8Z"
+              fill="white"
+            /></svg
+        ></a>
+        <a href="#" class="page-current">1</a>
+        <a href="#" class="page">2</a>
+        <a href="#" class="page">3</a>
+        <a href="#" class="page">4</a>
+        <a href="#" class="page">5</a>
+        <a href="#" href="#"
+          ><svg
+            class="next-page"
+            width="14"
+            height="16"
+            viewBox="0 0 14 16"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M14 8L0.499999 0.205773L0.5 15.7942L14 8Z"
+              fill="white"
+            /></svg
+        ></a>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-container">
+        <img
+          class="logo footer-logo"
+          src="../images/SquareEyes_Logo_upgraded_compressed.png"
+          alt="Square Eyes Logo"
+        />
+        <div class="footer-links">
+          <a href="#">Terms of service</a>
+          <a href="#">Send us feedback</a>
+          <a href="#">Jobs</a>
+        </div>
+        <p>&copy 2022 Square Eyes</p>
+      </div>
+      <script defer src="../javascript.js"></script>
+    </footer>
+  </body>
+</html>

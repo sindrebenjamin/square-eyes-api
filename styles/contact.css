@@ -1,0 +1,152 @@
+.contact-form {
+    width: 100;
+    background-color: #1F202F;
+    margin: 0 auto;
+    padding: 0 5%;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.contact-introduction {
+    margin-bottom: 2rem;
+}
+
+.contact-introduction h1 {
+    font-family: "nunito", sans-serif;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+
+.contact-input::placeholder {
+    font-size: 14px;
+    font-family: "roboto", sans-serif;
+}
+
+.contact-input {
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 6px;
+    outline: none;
+    border: none;
+} 
+
+.your-message {
+    height: 200px;
+    resize: none;
+}
+
+.contact-submit {
+    width: 80px;
+    height: 30px;
+    color: #fff;
+    background-color: var(--color-main);
+    border: none;
+    border-radius: 6px;
+    font-weight: 700;
+    font-family: "roboto", sans-serif;
+    font-size: 14px;
+}
+
+.contact-submit:hover {
+    background-color: var(--color-hover);
+    cursor: pointer;
+}
+
+.button-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.contact-info {
+    padding: 0 5%;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+    width: 100%;
+    background-color: rgba(48, 34, 80, 0.5);
+    background-image: url(../images/repeating-bg-fixed.png);
+    background-size: 60%;
+  
+}
+
+
+
+.info-box {
+    margin-bottom: 2rem;
+}
+
+.socials-container {
+    margin-top: 3rem;
+}
+
+.social-icon {
+    margin-right: 0.5rem;
+}
+
+
+@media (min-width: 600px) {
+
+    .contact-introduction h1 {
+        font-size: 2rem;
+    }
+
+    .contact-everything {
+        width: 80%;
+        margin: auto;
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+    }
+
+    .contact-form {
+        border-radius: 10px 10px 0 0;
+    }
+
+    .contact-info {
+        border-radius: 0 0 10px 10px;
+        padding-bottom: 3rem;
+    }
+
+
+}
+
+
+@media (min-width: 1280px) {
+
+    body {
+        height: 100vh;
+    }
+
+    .contact-everything {
+        width: 80%;
+        max-width: 1000px;
+        margin: auto;
+        margin-top: 10%;
+        margin-bottom: 10%;
+        display: flex;
+    }
+
+    .contact-form {
+        border-radius: 10px 0px 0px 10px;
+        margin: 0;
+    }
+
+    .contact-info {
+        width: 33%;
+        border-radius: 0px 10px 10px 0px;
+    }
+
+    .name-and-email {
+        display: flex;
+        justify-content: space-between;
+        
+    }
+
+    .name-wrapper,
+    .email-wrapper {
+        width: 48%;
+    }
+
+}

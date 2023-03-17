@@ -1,0 +1,177 @@
+header, 
+#nav-links {
+    background-color: #101012;
+}
+
+
+
+header {
+    justify-content: space-between;
+    position: relative;
+    padding: 1rem;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+header,
+.top-header,
+.header-icons-left,
+.header-icons-right {
+    display: flex;
+    align-items: center;
+}
+
+.top-header {
+    justify-content: space-between;
+    width: 100%;
+}
+
+.search-placeholder::placeholder {
+    font-size: 14px;
+    font-family: "roboto", sans-serif;
+}
+
+.searchbar,
+.searchbar-mobile {
+    width: 30%;
+    height: 30px;
+    border-radius: 45px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+}
+
+.searchbar-mobile {
+    display: none;
+}
+
+/* .nav-link {
+    margin: 0 1rem;
+} */
+
+#nav-links {
+    display: none;
+    position: absolute;
+    padding-bottom: 3rem;
+    left: 0px;
+    top: 3rem;
+    width: 100%;
+    z-index: 10;
+    padding-left: 5%;
+}
+
+
+.burger-icon {
+    font-size: 2rem;
+    color: white;    
+    margin-right: 1rem;
+}
+
+.logo {
+    width: 73px;
+    height: 30px;
+}
+
+
+
+.searchbar input,
+.searchbar-mobile input {
+    border: none;
+    margin-left: 1rem;
+    width: 100%;
+    font-size: 14px;
+    outline: none;
+}
+
+
+.magnifier-icon {
+    margin-right: 1rem;
+}
+
+
+.user-icon {
+    margin-right: 0.5rem;
+}
+
+
+
+nav a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding-top: 2.5rem;
+}
+
+nav a:hover .nav-link {
+    border-bottom: solid 2px #EBC610;
+}
+
+.user-icon,
+.cart-icon {
+    fill: white;
+    transition: 0.3s;
+}
+
+
+.user-icon:hover {
+    fill: #EBC610;
+}
+
+.cart-icon:hover {
+    fill: #EBC610;
+}
+
+@media (min-width: 600px) {
+    .burger-icon {
+        display: none;
+    }
+
+
+    #nav-links {
+        display: flex;
+        justify-content: space-evenly;
+        position: static;
+        top: 0rem;
+        padding-bottom: 0rem;
+        max-width: 350px;
+        padding-left: 1.5rem;
+        
+    }
+
+    nav a {
+     
+        padding-top: 0rem;
+    }
+}
+
+
+@media (min-width: 1280px) {
+   
+    .searchbar {
+        width: 45%;
+    }
+
+    #nav-links {
+        max-width: 400px;
+        
+    }
+}
+
+@media (max-width: 1280px) {
+    header {
+        flex-direction: column;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .searchbar-mobile {
+        display: flex;
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+    .searchbar {
+        display: none;
+    }
+}

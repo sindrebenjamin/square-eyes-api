@@ -1,0 +1,488 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;900&family=Roboto:wght@300;400;700;900&display=swap');
+
+*, 
+*::before, 
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body {
+    color: white;
+    background: var(--color-bg);
+    font-family: "Roboto", sans-serif;
+}
+
+
+header {
+    display: none;
+}
+
+footer {
+    background-color: #101012;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    margin-top: 6rem;
+}
+
+.footer-logo,
+.footer-links {
+    margin-bottom: 1rem;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    
+}
+
+.footer-links a {
+    color:rgb(170, 170, 170) ;
+    text-decoration: none;
+    transition-duration: 0.2s;
+}
+
+.footer-links a:hover {
+    color: white;
+}
+
+.footer-container {
+    text-align: center;
+    max-width: 500px;
+    margin: auto;
+}
+
+
+.banner-info-wrapper,
+.details-desktop,
+.more-details-desktop {
+    display: none;
+}
+
+.movie-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem; 
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.movie-tile {
+    height: 200px;
+    position: relative;
+}
+
+.movie-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.invisible-overlay-link {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+    top: 0;
+    left: 0;
+}
+
+.overlay {
+    height: 3.5rem;
+    bottom: 0;
+    width: 100%;
+    position: absolute;   
+    transition: .5s ease;
+    overflow: hidden;
+}
+
+.overlay-bg {
+    background-color: #000;
+    opacity: 0.5;
+    height: 100%;
+}
+
+.overlay-content {
+    position: absolute;
+    color: #fff;
+    z-index: 1;
+    padding: 1rem;
+    transition: 0.5s;
+}
+
+.movie-header,
+.movie-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.movie-header h2 {
+    margin: auto;
+    font-size: 16px;
+    white-space: nowrap;
+}
+
+.movie-tile .long-title {
+    font-size: 12px;
+}
+
+.movie-details {
+    display: none;
+    white-space: nowrap;
+}
+
+.movie-description {
+    padding-top: 10rem;
+}
+
+.aether-flux {
+    background-image: url(../images/Aeon_Flux_008.jpg);
+}
+
+.smokin-aces {
+    background-image: url(../images/smokin\ aces.jpg);
+}
+
+.ant-man {
+    background-image: url(../images/Ant-Man-The-Wasp-034.jpg);
+}
+
+.aquaman {
+    background-image: url(../images/Aquaman-057.jpg);
+}
+
+.bad-boys {
+    background-image: url(../images/Bad-Boys-042.jpg);
+}
+
+.brightburn {
+    background-image: url(../images/Brightburn_023.jpg);
+}
+
+.john-wick {
+    background-image: url(../images/john\ wick.jpg);
+}
+
+.marvel {
+    background-image: url(../images/marvel.jpg);
+}
+
+.mayhem {
+    background-image: url(../images/Mayhem_028.jpg);
+}
+
+.mission-impossible {
+    background-image: url(../images/mi2058.jpg);
+}
+
+.mission-impossible2 {
+    background-image: url(../images/mi3049.jpg);
+}
+
+.snowpiercer {
+    background-image: url(../images/Snowpiercer-042.jpg);
+}
+
+.star-wars {
+    background-image: url(../images/star\ wars.jpg);
+}
+
+.sucker-punch {
+    background-image: url(../images/sucker\ punch.jpg);
+}
+
+.tomb-raider {
+    background-image: url(../images/tomb\ raider.jpg);
+}
+
+.tron {
+    background-image: url(../images/tron.jpg);
+}
+
+.underwater {
+    background-image: url(../images/underwater.jpg)
+}
+
+.venom {
+    background-image: url(../images/Venom-043.jpg);
+}
+
+
+.movie-banner {
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 300px;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.x-button-wrapper {
+    margin: 1rem 0 0 1rem;
+}
+
+.plus-button-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 1rem 1rem 0;
+}
+
+
+.button {
+    color: white;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-family: "nunito", sans-serif;
+    margin-top: 1rem;
+}
+
+.movie-details-sa {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-weight: 300;
+}
+
+.movie-details-rating-sa {
+    border: 1px solid #fff;
+    padding: 1px 8px;
+}
+
+.movie-details-rating-sa,
+.movie-details-time-sa,
+.movie-details-year-sa {
+    margin-right: 0.75rem;
+}
+
+.discount {
+    text-decoration: line-through; 
+}
+
+.button {
+    background-color: var(--color-main);
+    font-size: 1.2rem;
+    border-radius: 6px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.buy-button {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 1rem;
+}
+
+.button:hover {
+    background-color: var(--color-hover);
+}
+
+.no-style-link {
+    text-decoration: none;
+}
+
+.description {
+    margin-top: 1rem;
+}
+
+.details,
+.details-desktop {
+    margin-top: 1rem;
+}
+
+
+summary {list-style: none}
+summary::-webkit-details-marker {display: none; }
+
+summary {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+details summary::after {
+    content: ">";
+    transform: rotate(90deg);
+    font-size: 2rem;
+    font-family: 'Poppins', sans-serif;
+    transition: 0.2s;
+
+}
+
+details[open] summary:after {
+    transform: rotate(-90deg); 
+}
+
+.details-content {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.movie-recommendations {
+    display: flex;
+    gap: 1rem;
+    overflow: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    width: 100%;
+}
+
+.movie-recommendations::-webkit-scrollbar {
+    display: none;
+    }
+
+.first-movie {
+    margin-left: 1rem;
+}
+
+.movie-tile {
+    min-width: 150px;
+}
+
+h2 {
+    font-family: "nunito", sans-serif;
+}
+
+.more-like-this {
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.main-content-wrapper {
+    margin: 0 1rem 0 1rem;
+}
+
+@media (min-width: 600px) {
+    .footer-links {
+        flex-direction: row;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    footer {
+        margin-top: 7rem;
+    }
+}
+
+@media (min-width: 850px) {
+
+    .movie-banner {
+        background-image: linear-gradient(to right,  rgba(255,0,0,0),  #11131F 50%), url(../images/smokin\ aces2.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 400px;
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .more-details-desktop,
+    .details-desktop {
+        display: block;
+    }
+
+    .flex-details {
+        display: flex;
+        gap: 7rem;
+    }
+
+    .details-1 {
+        width: 50%;
+    }
+
+    .price-desktop {
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+
+    .plus-button-wrapper,
+    .x-button,
+    .mobile-content
+     {
+        display: none;
+       
+    }
+    
+
+    .banner-infobox-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 50%;
+    }
+
+    .bottom-elements {
+        margin-bottom: 2rem;
+    }
+    
+
+    .banner-info-wrapper {
+        display: flex;
+        justify-content: flex-end;
+        height: 100%;
+        width: 100%;
+    }
+
+    .add-to-cart-button {
+        width: 200px;
+        padding: 15px 0 15px 0;
+    }
+
+    .buttons-wrapper {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        margin-top: 1rem;
+    }
+    
+    header {
+        display: flex;
+    }
+
+    .movie-banner,
+    .main-content-wrapper,
+    .movie-recommendations {
+        margin: 0 5% 0 5%;
+    }
+
+    .first-movie {
+        margin: 0;
+    }
+
+
+    .page-wrapper {
+        max-width: 1200px;
+        margin: auto;
+    }
+
+
+    .movie-recommendations {
+        justify-content: flex-start;
+        width: 90%;
+    }
+
+    .movie-tile {
+        width: 100%;
+    }
+
+    .more-details-desktop {
+        margin-top: 2rem;
+    }
+
+    .more-like-this {
+        margin-top: 3rem;
+    }
+}
+
+
